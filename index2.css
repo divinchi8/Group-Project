@@ -1,0 +1,68 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/lookbothways\ 1.png);
+}
+.nav{
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+
+
+}
+.active{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    gap: 30px;
+}
+.li{
+    font-weight: bolder;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    gap: 5px;
+  }
+  
+  .search-image {
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  
+  .search-input {
+    flex: 1;
+    height: 30px;
+    width: 53px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+  }
+  .search-input::placeholder {
+    color: white;
+  }
+  .search-container{
+    height: 20px;
+  }
+  
