@@ -1,59 +1,43 @@
+span{
+    color: red;
+}
 body{
-    background-color: #D06969;
+background-image: url(/img/Group\ 39.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
-.container{
-    background-color: black;
-    /* display: flex; */
-    height: 852px;
-    border-radius: 5px;
-    width: 393px;
-    margin: 0 auto;
-    padding: 10px;
+.infor{
+color: white;
+text-align: center;
+font-family: "Inter", sans-serif;
 }
-.status-bar{
-    width: 100%;
-    
+.infor span{
+    color: red;
 }
-.text{
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    /* font-size: 20px; */
-    display: flex;
-    justify-content: center;
+.Chatflix{
+    font-size: 40px;
+    font-weight: bolder;
 }
-.first{
-    margin: 0 auto;
-    align-self: center;
-    justify-self: center;
-    font-size: 20px;
+.p{
+    color: #AAA7A7;
+    font-size: 14px;
 }
-.second{
-    align-self: flex-end;
-}
-.profiles{
-    display: flex;
+.Content{
     flex-direction: column;
-    gap: 40px;
-    /* align-items: center;     */
-    margin-top: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
 }
-.first2-profiles{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+button{
+    margin-top: 60px;
+   width: 280px;
+   height: 50px;
+   padding: .5em 1.5em;
+   font-family: "Inter", sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+
 }
-.second2-profiles{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-.home{
-    display: flex;
-    margin-top: 320px;
-    width: 100%;
-}
+
