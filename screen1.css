@@ -1,43 +1,82 @@
-span{
-    color: red;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
-background-image: url(/img/Group\ 39.png);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+span {
+  color: red;
 }
-.infor{
-color: white;
-text-align: center;
-font-family: "Inter", sans-serif;
+body {
+  background-image: url(/img/Default.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.infor span{
-    color: red;
+.infor {
+  color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
 }
-.Chatflix{
-    font-size: 40px;
-    font-weight: bolder;
+.infor span {
+  color: red;
 }
-.p{
-    color: #AAA7A7;
-    font-size: 14px;
+.Chatflix {
+  font-size: 2em;
+  font-weight: bolder;
+  margin-bottom: .5em;
 }
-.Content{
-    flex-direction: column;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+.p {
+  color: #aaa7a7;
+  font-size: 14px;
+  width: 100%;
 }
-button{
-    margin-top: 60px;
-   width: 280px;
-   height: 50px;
-   padding: .5em 1.5em;
-   font-family: "Inter", sans-serif;
-   font-size: 20px;
-   font-weight: bold;
-
+.Content {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+  margin: .5em auto;
 }
-
+button {
+  padding: 0.5em 1.5em;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+} 
+.img img{
+    max-width: 300px;
+}
+@media(max-width: 390px) and (min-width: 500px){
+    body{
+        height: 100vh;
+    }
+    /* .Content{
+        margin-top: 5em;
+        padding: 2em;
+    } */
+    button{
+        margin-top: 1em;
+    }
+}
+ @media(max-width: 450px){
+    .Content{
+      gap: 2em;
+    }
+    .infor{
+        margin-bottom: 2em;
+    }
+    .img img{
+        max-width: 400px;
+    }
+    button{
+        margin-top: 1em;
+    }
+} 
