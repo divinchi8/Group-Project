@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 9, 0, 0.906),
+    rgba(0, 0, 0, 1) 25%
+  );
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding: 1em 1.3em;
+  padding-top: 2.2em;
+}
+
+.introductory-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name p {
+  font-size: 1.3em;
+}
+
+.introductory-icons {
+  display: flex;
+  gap: 0.5em;
+}
+
+.introductory-icons img {
+  width: 32px;
+  height: 32px;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.4em;
+  margin-top: 0.8em;
+}
+
+.buttons button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white; /* Adjusted border width */
+  border-radius: 20px;
+  padding: 0.5em 1em;
+}
+
+.movie-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  position: relative;
+}
+
+.movie-image-container img {
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.movie-image-container img:last-child {
+  top: 250px;
+  left: 0;
+  z-index: 1; /* Lowered z-index */
+}
+
+.play-buttons {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center; /* Centered buttons horizontally */
+  position: relative;
+  margin-top: 370px; /* Adjusted margin top */
+}
+
+.play-buttons button {
+  color: black;
+  font-weight: 200;
+  padding: 5px 30px;
+  z-index: 1;
+}
+.play-buttons button:last-child {
+  background-color: #212121;
+  color: white;
+  border: 1px solid transparent;
+}
+.mobile-games-container {
+  padding: 2em;
+  padding-right: 0.5em;
+  padding-bottom: 1em;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+.title p:first-child {
+  font-weight: bold;
+}
+.game-container,
+.popular-movie {
+  display: flex;
+  gap: 0.5em;
+}
+.game img {
+  border-radius: 20px;
+  width: 110px;
+  height: 110px;
+}
+.game p {
+  font-size: 0.89em;
+}
+.game span {
+  font-size: 0.8em;
+  color: grey;
+}
+.game-container, .popular-movie {
+  display: flex;
+  gap: 0.5em;
+  overflow-x: scroll; /* Added overflow-x property */
+}
+
+.game {
+  border-radius: 20px;
+  /* Removed width property */
+  height: 150px;
+}
+
+/* Optional styling */
+.game-container::-webkit-scrollbar, .popular-movie::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #212121;
+  padding: 2em 0em;
+  padding-top: 0.1em;
+  border-radius: 10px 10px 0px 0px;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon img {
+  width: 24px;
+}
+.icon p {
+  font-size: 10px;
+}
+.movies {
+  padding: 0 2em;
+  padding-right: .5em;
+  overflow-x: scroll;
+  margin-top: .75em;
+}
+
+.movies::-webkit-scrollbar {
+  display: none;
+}
+.movie img {
+    width: 100px;  /* Adjust width as necessary */
+    height: 150px; /* Adjust height as necessary */
+    object-fit: cover; /* Ensures the image covers the set dimensions without distortion */
+    border-radius: 5px;
+}
+.m2{
+  margin-bottom: 4em;
+}
+/*media queries*/
+@media (min-width: 391px){
+  .play-buttons{
+    margin-top: 440px;
+  }
+  .movie-image-container img:last-child{
+    top: 300px;
+  }
+}
+@media (min-width: 390px) and (max-width: 400px){
+  .play-buttons{
+    margin-top: 400px;
+  }
+  .movie-image-container img:last-child{
+    top: 270px;
+  }
+}
+@media (max-width: 361px){
+  .play-buttons{
+    margin-top: 340px;
+  }
+  .movie-image-container img:last-child{
+    top: 230px;
+  }
+}
