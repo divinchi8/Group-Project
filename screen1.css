@@ -1,0 +1,42 @@
+body{
+    background-color: #000000;
+}
+.container{
+    background-color: black;
+    height: 100vh;
+}
+
+.text{
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.first{
+    text-align: center;
+}
+.second{
+    text-align: right;
+    margin-right: 1em;
+    margin-top: -2.5em;
+    font-size: 0.8em;
+}
+.profiles{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-top: 5em;
+    justify-content: center;
+}
+.first2-profiles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.second2-profiles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}

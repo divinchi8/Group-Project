@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+span {
+  color: red;
+}
+body {
+  background-image: url(/assets/Default.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+.infor {
+  color: white;
+  text-align: center;
+}
+.infor span {
+  color: red;
+}
+.Chatflix {
+  font-size: 2em;
+  font-weight: bolder;
+  margin-bottom: .5em;
+}
+.p {
+  color: #aaa7a7;
+  font-size: 14px;
+  width: 100%;
+}
+.Content {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+  margin: .5em auto;
+}
+button {
+  padding: 0.5em 1.5em;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+} 
+.img img{
+    max-width: 300px;
+}
+.navbar {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #212121;
+    padding: 2em 0em;
+    padding-top: 0.1em;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon img {
+    width: 24px;
+  }
+  .icon p {
+    font-size: 12px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+}
+@media(max-width: 390px) and (min-width: 500px){
+    body{
+        height: 100vh;
+    }
+   
+    /* .Content{
+        margin-top: 5em;
+        padding: 2em;
+    } */
+    button{
+        margin-top: 1em;
+    }
+}
+ @media(max-width: 450px){
+    .Content{
+      gap: 2em;
+    }
+    .img img{
+        max-width: 400px;
+    }
+    button{
+        margin-bottom: 4em;
+    }
+} 

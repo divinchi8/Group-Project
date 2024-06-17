@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Video Controls</title>
+    <link rel="stylesheet" href="/play.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="call" id="call">
+        <img src="/assets/play-page/pig 2.png" alt="" />
+        <img src="/assets/play-page/powerpuff 1.png" alt="" />
+        <div class="call-buttons">
+          <button class="red-button" id="end-call">
+            <i class="fas fa-phone-slash icon" style="color: red"></i>
+          </button>
+          <button id="microphone">
+            <i class="fas fa-microphone icon"></i>
+          </button>
+          <button id="speaker"><i class="fas fa-volume-up icon"></i></button>
+          <button id="no-video-call">
+            <i class="fas fa-video-slash icon"></i>
+          </button>
+          <!-- FontAwesome icons for microphone, no speaker, and video call -->
+          <button id="micBtn" style="display: none;"><i class="fas fa-microphone"></i></button>
+          <button id="speakerBtn" style="display: none;"><i class="fas fa-volume-up"></i></button>
+          <button id="videoCallBtn" style="display: none;"><i class="fas fa-video"></i></button>
+        </div>
+      </div>
+      <div class="video-container" id="video-container">
+        <video id="myVideo" autoplay>
+          <source
+            src="/assets/play-page/BLADE RUNNER 2049 - Official Trailer.mp4"
+            type="video/mp4"
+          />
+          <track
+            id="subtitleTrack"
+            src="C:\Users\hp\Downloads\Dune.2021.1080p.BluRay.REMUX.AVC.Atmos-TRiToN.srt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="top-bar" id="top-bar">
+          <img src="/assets/play-page/netflix.png" alt="" />
+          <img src="/assets/play-page/ratings.png" class="ratings" alt="" />
+          <div class="top-bar-buttons">
+            <button id="expandBtn">
+              <img src="/assets/play-page/Expand.png" alt="" />
+            </button>
+            <button id="compressBtn" style="display: none">
+              <img src="/assets/play-page/Compress.png" alt="Compress" />
+            </button>
+            <button id="cancelBtn">
+              <a href="/searchdetails.html">
+              <img src="/assets/play-page/Cross.png" alt="" /></a>
+            </button>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="backwardBtn">
+            <img
+              src="/assets/play-page/backward10.png"
+              alt="Backward 10 seconds"
+            />
+          </button>
+          <button id="playPauseBtn">
+            <img src="/assets/play-page/Pause.png" alt="Play/Pause" />
+          </button>
+          <button id="forwardBtn">
+            <img
+              src="/assets/play-page/Forward 10.png"
+              alt="Forward 10 seconds"
+            />
+          </button>
+        </div>
+        <div class="seek-bar">
+          <input type="range" id="seekBar" value="0" step="0.1" />
+        </div>
+        <div class="bottom-buttons">
+          <button><img src="/assets/play-page/Group 14.png" alt="" /></button>
+          <button><img src="/assets/play-page/lock.png" alt="" /></button>
+          <button><img src="/assets/play-page/Speed.png" alt="" /></button>
+        </div>
+      </div>
+    </div>
+    <script src="/play.js"></script>
+  </body>
+</html>
