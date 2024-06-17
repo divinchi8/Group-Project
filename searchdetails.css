@@ -17,6 +17,10 @@ body {
 .details {
   margin: 0.2em 0em;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 .details p {
   display: flex;
   align-items: center;

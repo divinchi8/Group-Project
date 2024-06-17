@@ -173,7 +173,10 @@ body {
   overflow-x: scroll;
   margin-top: .75em;
 }
-
+a{
+  text-decoration: none;
+  color: white;
+}
 .movies::-webkit-scrollbar {
   display: none;
 }
