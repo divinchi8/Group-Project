@@ -17,7 +17,7 @@ body {
     justify-content: center;
 }
 
-.back-arrow {
+.back-arrow a{
     margin-left: -2em;
 }
 
