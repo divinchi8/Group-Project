@@ -35,11 +35,16 @@ a{
   align-items: center;
   gap: 2.5em;
   position: absolute;
-  top: -5px;
+  top: -55px;
   left: 90%;
   background-color: #595959b3;
   padding: 3em 1em;
   height: 32vh;
+}
+@media (max-width: 385px) {
+  .call-buttons {
+    top: -40px;
+  }
 }
 .call-buttons button {
   color: white;
